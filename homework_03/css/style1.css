@@ -1,0 +1,143 @@
+/* styles for body, #content, h1, h2, a */
+body {
+  background: #dcbb9a;
+  color: #000000;
+}
+body #content {
+  width: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 1px 20px;
+}
+body #content:first-child {
+  padding-top: 20px;
+}
+body #content h1 {
+  text-align: center;
+  text-transform: none;
+  margin: 0;
+  color: #893c00;
+}
+body #content h2 {
+  color: #893c00;
+}
+body #content a {
+  color: #3d70b6;
+}
+
+/* styles for images */
+.img-left {
+  border: 2px solid #893c00;
+  padding: 2px;
+  float: left;
+  margin-right: 18px;
+  margin-bottom: 10px;
+}
+
+.img-right {
+  border: 2px solid #893c00;
+  padding: 2px;
+  float: right;
+  height: 180px;
+  margin-left: 21px;
+}
+
+/* styles for div.brief */
+.brief {
+  display: inline-block;
+  float: left;
+  width: 390px;
+  padding: 20px 5px 20px 20px;
+  margin-right: 21px;
+  margin-bottom: 1px;
+  background: #fadcba;
+}
+
+/* styles for table */
+table {
+  border-collapse: collapse;
+  margin-bottom: 60px;
+}
+table caption {
+  text-align: right;
+  color: #000000;
+}
+table th {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: normal;
+  background: #e0e0e0;
+  border-right: 1px solid #ffffff;
+  color: #000000;
+}
+table th:first-child {
+  border-right: 1px solid #ffffff;
+}
+table th:last-child {
+  border-right: none;
+}
+table td {
+  padding: 10px 10px 10px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #ffffff;
+}
+
+/* styles for form */
+form {
+  color: #808080;
+}
+form .nameSurname {
+  display: inline-block;
+  width: 101%;
+}
+form .nameSurname label {
+  display: inline-block;
+}
+form .nameSurname input {
+  width: 49%;
+  display: inline-block;
+}
+form .nameSurname input:last-child {
+  width: 48%;
+  float: right;
+}
+form .surnameLabel {
+  margin-left: 47%;
+  padding-left: 4px;
+}
+form .email input {
+  width: 960px;
+  line-height: 30px;
+}
+form .rate input {
+  width: 960px;
+  line-height: 30px;
+}
+form .feedback textarea {
+  width: 960px;
+  height: 180px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+form label {
+  display: block;
+  padding-bottom: 5px;
+}
+form input {
+  margin-bottom: 15px;
+  line-height: 30px;
+  padding-left: 5px;
+}
+form button {
+  background: #ffffff;
+  border: 1px solid #3d70b6;
+  color: #3d70b6;
+  width: 250px;
+  line-height: 50px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+/*# sourceMappingURL=style1.css.map */

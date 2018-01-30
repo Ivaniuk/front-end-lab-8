@@ -1,0 +1,197 @@
+$contentBackground: null !default;
+$pageBackground: null !default;
+$fontColor: null !default;
+$headingsColor: null !default;
+$headingH1Text: null !default;
+$switchBrief: null !default;
+$backgroundTh: null !default;
+$backgroundTd: null !default;
+$formColor: null !default;
+$colorButton: null !default;
+$widthBorderImg: null !default;
+$styleBorderImg: null !default;
+$colorBorderImg: null !default;
+$paddingImg: null !default;
+$firstThBorder: null !default;
+$colorLink: null !default;
+
+// mixin for borders images 
+@mixin borderImage ($widthBorderImg, $styleBorderImg, $borderColorImg, $paddingImg) {
+	border: $widthBorderImg $styleBorderImg $colorBorderImg;
+	padding: $paddingImg;
+}
+
+/* styles for body, #content, h1, h2, a */
+body {
+	background: $pageBackground;
+	color: $fontColor;
+
+	#content {
+		width: 960px;
+	  	margin: 0 auto;
+	  	background: $contentBackground;
+	  	padding: 1px 20px;
+
+	  	&:first-child {
+			padding-top: 20px;
+		}
+
+		h1 {
+			text-align:center;
+			text-transform: $headingH1Text;
+			margin: 0;
+			color: $headingsColor;
+		}
+
+		h2 {
+			color: $headingsColor;
+		}
+
+		a {
+			color: $colorLink;
+		}	
+	}
+}
+
+/* styles for images */
+.img-left {
+	@include borderImage ($widthBorderImg, $styleBorderImg, $colorBorderImg, $paddingImg);
+	float: left;
+	margin-right: 18px;
+	margin-bottom: 10px;
+}
+
+.img-right {
+	@include borderImage($widthBorderImg, $styleBorderImg, $colorBorderImg, $paddingImg);
+	float: right;
+	height: 180px;
+	margin-left: 21px;
+}
+
+/* styles for div.brief */
+@if $switchBrief { 
+	.brief {
+		display: inline-block;
+		float: left;
+		width: 390px;
+		padding: 20px 5px 20px 20px;
+		margin-right: 21px;
+		margin-bottom: 1px;
+		background: #fadcba;	
+	}
+} @else {
+	.brief {
+		background: #fff178;
+		color: black;
+		padding: 20px;
+		margin-bottom: 40px;
+	}
+} 
+
+/* styles for table */
+table {
+	border-collapse: collapse;
+	margin-bottom: 60px;
+
+	caption {
+		text-align: right;
+		color: #000000;
+	}
+
+	th {
+		padding: 10px 20px;
+		text-transform: uppercase;
+		text-align: left;
+		font-weight: normal;
+		background: $backgroundTh;
+		border-right: 1px solid #ffffff;
+		color: #000000;
+
+		&:first-child {
+			border-right: $firstThBorder solid #ffffff;
+		}
+
+		&:last-child {
+			border-right: none;
+		}
+	}
+
+	td {
+		padding: 10px 10px 10px 20px;
+		border-bottom: 1px solid $backgroundTh;
+		background: $backgroundTd;
+	}
+}
+
+/* styles for form */
+form {
+	color: $formColor;
+
+	.nameSurname {
+		display: inline-block;
+		width: 101%;
+
+		label {
+			display: inline-block;
+		}
+
+		input {
+			width: 49%;
+			display: inline-block;
+		
+			&:last-child {
+				width: 48%;
+				float:right;
+			}
+		}
+	}
+
+	.surnameLabel {
+		margin-left: 47%;
+		padding-left: 4px;
+	}
+
+	.email input {
+		width: 960px;
+		line-height: 30px;
+	}
+
+	.rate input {
+		width: 960px;
+		line-height: 30px;
+	}
+
+	.feedback textarea {
+		width: 960px;
+		height: 180px;
+		padding-left: 5px;
+		padding-top: 5px;
+	}
+
+	label {
+		display: block;
+		padding-bottom: 5px;
+	}
+
+	input {
+		margin-bottom: 15px;
+		line-height: 30px;
+		padding-left: 5px;
+	}
+
+	button {
+		background: $contentBackground;
+		border: 1px solid $colorButton;
+		color: $colorButton;
+		width: 250px;
+		line-height: 50px;
+		margin-top: 25px;
+		margin-bottom: 40px;
+		font-size: 22px;
+	}
+}
+
+
+
+
+
