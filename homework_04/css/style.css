@@ -1,0 +1,450 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;	
+}
+
+/*styles for page header*/
+header {
+	width: 100%;
+	height: 740px;	
+	background: url('../img/apples.jpg') center 100%;
+}
+
+.logoMenuContainer {
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	width: 73%;
+	height: 90px;
+	margin: 0 auto;	
+}
+
+.logo {
+	display: inline-block;	
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 4px;
+	color: #fff;
+}
+
+/*styles for menu*/
+nav ul li {
+	display: inline-block;
+	margin-left: 55px;
+	padding: 12px 10px;
+}
+
+nav ul li:first-child {
+	border-bottom: 2px solid #b7c8d9;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #fff;	
+}
+
+nav ul li:hover {
+	border-bottom: 2px solid #b7c8d9;
+}
+
+/*styles for big brand name*/
+.blackWhite {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+	margin: 9% auto;	
+}
+
+.brandName {
+	position: relative;
+	font-size: 44px;
+	letter-spacing: 7px;
+	padding-top: 30px;
+	text-align: center;
+	color: #fff;
+}
+
+.brandDate {
+	padding-top: 5px;
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+}
+
+span {
+	font-size: 80px;
+}
+
+sup {
+	display: inline-block;
+	position: relative;
+	top: -5px;
+	font-size: 14px;
+	letter-spacing: normal;
+}
+
+.readMoreButton {
+	display: block;
+	width: 14%;
+	position: relative;
+	top: 4%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+	line-height: 50px;
+	background: #343638;
+	opacity: 0.8;
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+.loremSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 300px;
+	background: #fff;
+}
+
+.loremBox {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	width: 72%;
+	height: 100px;
+}
+
+.loremItem1 {
+	width: 40%;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.loremItem2 {
+	width: 48%;
+	font-size: 12px;
+	text-align: justify;
+}
+
+/*styles for block with 4 images*/
+.featuredArticles {
+	height: 1400px;
+	background: #f3f3f3;
+}
+
+.heading {
+	position: relative;
+	top: 150px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.mainImagesContainer {
+	display: flex;
+}
+
+.imagesContainer {
+	width: 73%;
+	height: 630px;
+	margin: 0 auto;
+	position: relative;
+	top: 240px;
+}
+
+.topImagesBox {
+	display: flex;
+	justify-content: space-between;
+	height: 300px;
+	box-sizing: border-box;
+}
+
+.topImage1 {
+	width: 66%;
+	height: 101%;
+	box-sizing: border-box;
+	background: url('../img/sample.jpg') no-repeat center 100%;
+ 	box-shadow: inset 3px -43px 48px -11px rgba(52,54,56,0.5);	
+}
+
+.topImage2 {
+	width: 32%;
+	height: 100%;
+	box-sizing: border-box;
+	background: url('../img/sample2.jpg') no-repeat center 100%;
+ 	box-shadow: inset 3px -43px 48px -11px rgba(52,54,56,0.5);
+}
+
+.bottomImagesBox {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	height: 300px;
+	margin-top: 30px;
+	box-sizing: border-box;	
+}
+
+.bottomImage1 {
+	width: 66%;
+	height: 100%;
+	box-sizing: border-box;
+	background: url('../img/sample3.jpg') no-repeat center 100%;
+ 	box-shadow: inset 13px -43px 108px -11px rgba(52,54,56,0.6);
+}
+
+.imageText {
+	display: inline-block;
+	position: relative;
+	left: 35px;
+	top: 216px;
+	color: #fff;
+	font-size: 18px;
+	text-shadow: 0px 0px 1px darkslategrey;
+}
+
+.imageText2 {
+	top: 220px;
+}
+
+.imageLikes {
+	display: inline-block;
+	margin-left: 61%;
+	margin-top: 3%;
+	padding: 5px 10px;
+	font-size: 14px;
+	color: #fff;
+	background: #5f5e5f;
+	border: 2px solid #fff;	
+}
+
+.imageLikes2 {
+	margin-left: 28%;
+	margin-top: 5%;
+}
+
+.bottomImageLikes {
+	display: inline-block;
+	margin-left: 60%;
+	margin-top: 3%;
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 14px;
+	background: #5f5e5f;
+	border: 2px solid #fff;	
+}
+
+.imageLikes span {
+	padding-left: 3px;
+	font-size: 18px;
+}
+
+.bottomImageLikes span {
+	padding-left: 3px;
+	font-size: 18px;
+}
+
+/*styles for email form*/
+.mainEmailContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 73%;
+	height: 200px;
+	margin-top: 350px;
+	margin-left: 215px;
+	background: #fff;
+}
+
+.emailContainer {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	height: 60px;
+}
+
+.subscribeEmail {
+	width: 32%;
+	height: 60px;
+	font-size: 22px;
+	text-align: right;
+}
+
+.subscribeEmail p {
+	margin-top: 14px;
+}
+
+.emailFormBox {
+	display: flex;
+	justify-content: space-between;
+	width: 62%;
+	height: 56px;
+	border: 1px solid #000;
+}
+
+.emailFormBox input {
+	width: 68%;
+	height: 54px;
+	padding-left: 25px;
+	font-size: 14px;
+	font-weight: 700;
+	background: #f3f3f3;
+	border: none;
+}
+
+button.emailButton {
+	width: 28%;
+	height: 56px;
+	font-size: 14px;
+	color: #fff;
+	border: none;
+	background: #343638;
+}
+
+/*styles for footer*/
+footer {
+	height: 400px;
+	background: #fff;
+}
+
+/*styles for footer content*/
+.footerContainer {
+	display: flex;
+	justify-content: space-between;
+	margin: 160px auto;
+	width: 73%;
+	height: 158px;
+}
+
+.footerBox1 {
+	width: 16%;
+	height: 158px;
+}
+
+.footerBox2 {
+	width: 15%;
+	height: 158px;
+	margin-right: 50px;
+}
+
+.footerBox3 {
+	width: 17%;
+	height: 158px;
+}
+
+.footerBox3 span {
+	display: block;
+	font-size: 14px;
+	line-height: 35px;
+	color: #e0e0e0;
+}
+
+.footerBox4 {
+	width: 22%;
+	height: 158px;
+}
+
+.footerBoxTitle {
+	padding-bottom: 15px;
+	font-weight: 700;
+}
+
+.footerBoxText {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	text-align: justify;
+	color: #aeaeae;
+}
+
+.footerBox2Text p {
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+.footerBox4Text {
+	margin: 0;
+	padding: 0;
+	color: #aeaeae;
+}
+
+.footerEmailBox {
+	display: flex;
+	justify-content: space-between;
+	height: 42px;
+	margin-top: 30px;
+	border: 1px solid #000;
+}
+
+.footerEmailBox input {
+	width: 55%;
+	height: 40px;
+	padding-left: 7%;
+	font-size: 13px;
+	font-style: italic;
+	font-weight: normal;
+	background: #f3f3f3;
+	border: none;
+}
+
+button.footerEmailButton {
+	width: 40%;
+	height: 42px;
+	font-size: 13px;
+	color: #fff;
+	border: none;
+	background: #343638;
+}
+
+/*styles for footer navigation*/
+.footerNavContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 168px;
+	width: 73%;
+	height: 80px;
+	border-top: 1px solid #f0f0f0;
+}
+
+.author {
+	font-size: 14px;
+	color: #aeaeae;
+}
+
+.footerNav {
+	width: 407px;
+}
+
+.footerNav ul {
+	padding: 0;
+}
+
+nav.footerNav ul li {
+	display: inline-block;
+	margin-left: 55px;
+	padding: 12px 0;
+}
+
+nav.footerNav ul li a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #000;	
+}
+
+nav.footerNav ul li:first-child {
+	border-bottom: none;
+}
+
+nav.footerNav ul li:hover {
+	border-bottom: none;
+}
