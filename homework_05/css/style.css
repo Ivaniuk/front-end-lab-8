@@ -28,7 +28,7 @@
 		justify-content: space-between;	
 		align-items: center;
 		width: 80%;
-		height: 90px;
+		height: 92px;
 		margin-left: 14%; 	
 	}
 
@@ -40,7 +40,7 @@
 	
 	/* header menu */
 	.headerMenu {
-		width: 85%;
+		flex-basis: 85%;
 		height: 54px;
 		margin-left: 4%;
 		margin-bottom: 7px;
@@ -112,12 +112,12 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		height: 270px;
+		flex-basis: 270px;
 		box-sizing: border-box;		
 	}
 
 	.imageBlock {
-		width: 31.5%;
+		flex-basis: 31.5%;
 		height: 270px;
 		box-sizing: border-box;
 		background: #cccccc;		
@@ -170,13 +170,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 49%;
+		flex-basis: 49%;
 		height: 30px;
 		margin-left: 14%;		
 	}
 
 	.footerNavigation {
-		width: 50%;
+		flex-basis: 50%;
 		height: 30px;		
 	}
 
@@ -203,7 +203,7 @@
 	}
 
 	.footerCopyright {
-		width: 47%;
+		flex-basis: 47%;
 		margin-right: 2%;
 		font-size: 13px;
 		font-weight: 700;		
@@ -257,9 +257,9 @@
 	/* header menu */
 	.headerMenu {
 		width: 95%;
-		height: 34px;		
+		flex-basis: 34px;		
 		margin-bottom: 5px;
-		text-align: center;				
+		text-align: center;						
 	}
 
 	.headerMenu ul {
@@ -318,7 +318,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		width: 836px;
+		flex-basis: 836px;
 		height: 860px;
 		margin: 0 auto;
 		box-sizing: border-box;		
@@ -328,12 +328,12 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		height: 270px;
+		flex-basis: 270px;
 		box-sizing: border-box;		
 	}
 
 	.imageBlock1 {
-		width: 48.6%;
+		flex-basis: 48.6%;
 		height: 270px;
 		box-sizing: border-box;
 		background: #cccccc;		
@@ -390,14 +390,14 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;		
-		width: 80%;
+		flex-basis: 80%;
 		height: 80px;
 		margin: 0 auto;		
 	}
 
 	.footerNavigation {
 		width: 90%;
-		height: 30px;
+		flex-basis: 30px;
 		margin: 0 auto;
 		text-align: center;		
 	}
@@ -426,6 +426,7 @@
 
 	.footerCopyright {
 		width: 87%;
+		flex-basis: auto;
 		margin: 0 auto;
 		padding-bottom: 3%;
 		text-align: center;
@@ -539,7 +540,7 @@
 	}
 
 	.mainContainer {		
-		width: 361px;
+		flex-basis: 361px;
 		height: 1440px;
 		margin: 0 auto;
 		box-sizing: border-box;		
@@ -556,7 +557,7 @@
 
 	.imageBlock1 {
 		width: 100%;
-		height: 220px;
+		flex-basis: 220px;
 		height: auto;
 		margin-bottom: 25px;
 		box-sizing: border-box;
@@ -614,14 +615,14 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;		
-		width: 80%;
+		flex-basis: 80%;
 		height: 120px;
 		margin: 0 auto;		
 	}
 
 	.footerNavigation {
 		width: 90%;
-		height: 70px;
+		flex-basis: 70px;
 		margin: 0 auto;
 		text-align: center;		
 	}
@@ -646,6 +647,7 @@
 
 	.footerCopyright {
 		width: 100%;
+		flex-basis: auto;
 		margin: 10px auto;
 		text-align: center;
 		font-size: 13px;
