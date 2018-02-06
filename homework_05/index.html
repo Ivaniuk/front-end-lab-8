@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homework 5. Responsive</title>
+
+  <!-- load stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+  <div class="content">
+    
+    <!-- page header -->
+    <header>
+      <div class="topHeaderContainer">
+        <div class="logoMenuContainer">      
+          <div class="logoEPAM">
+            <img src="img/logo.png" alt="EPAMlogo">
+          </div>
+          <nav class="headerMenu">
+            <ul>
+              <li><a href="#">SOLUTIONS</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">CAREERS</a>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!--  header banner -->
+      <div class="banner">
+        
+        <!--  header banner in different resolutions  -->
+        <picture>          
+          <source media="(min-width: 900px)" srcset="img/banner.jpg">
+          <source media="(min-width: 575px)" srcset="img/banner_tablet.jpg">
+          <source media="(min-width: 320px)" srcset="img/banner_mobile.jpg">  
+          
+          <!-- img tag for browsers that do not support picture element -->
+          <img src="img/banner_mobile.jpg" alt="small picture">
+
+        </picture>
+        <div class="bannerText">
+          Epam helps moneysupermarket deliver engaging digital experiences
+        </div>
+      </div>       
+    </header>
+
+    <!-- news block with 6 images -->
+    <main>
+      <div class="mainContainer">
+       
+        <!-- markup for desktop  -->
+        <!-- top block with 3 images -->
+        <div class="imagesContainer">
+          <div class="imageBlock imageBlock1">
+            <div class="imageBox">
+              <img src="img/news/01.jpg" width="275" height="147" alt="news picture1">
+            </div>
+            <p class="imageTitle">EPAM Acquires Alliance Global Services</p>
+            <p class="imageText">Increases Global Product Development Capabilities</p>
+          </div>
+          <div class="imageBlock imageBlock1">
+            <div class="imageBox">
+              <img src="img/news/02.jpg" width="275" height="147" alt="news picture2">
+            </div>
+            <p class="imageTitle">Q2 2015 Earnings Results Date Announced</p>
+            <p class="imageText">Results will be released on August 5, &nbsp; 2015</p>
+          </div>
+          <div class="imageBlock imageBlockDel">
+            <div class="imageBox">
+              <img src="img/news/03.jpg" width="275" height="147" alt="news picture3">
+            </div>
+            <p class="imageTitle">EPAM Acquires NavigationArts</p>
+            <p class="imageText">Expands Digital Engagement Practice</p>
+          </div>                 
+        </div>
+
+        <!-- bottom block with 3 images -->
+        <div class="imagesContainer">
+          <div class="imageBlock">
+            <div class="imageBox">
+              <img src="img/news/04.jpg" width="275" height="147" alt="news picture4">
+            </div>
+            <p class="imageTitle">Top 25 IT-companies in Ukraine, July 2015</p>
+            <p class="imageText">Growth recovery and a new leader</p>
+          </div>
+          <div class="imageBlock">
+            <div class="imageBox">
+              <img src="img/news/05.jpg" width="275" height="147" alt="news picture5">
+            </div>
+            <p class="imageTitle">German-Ukrainian Business &nbsp; Forum</p>
+            <p class="imageText">Learn why Ukraine is a perfect sourcing location for IT services</p>
+          </div>
+          <div class="imageBlock">
+            <div class="imageBox">
+              <img src="img/news/06.jpg" width="275" height="147" alt="news picture6">
+            </div>
+            <p class="imageTitle">User Friendly 2015</p>
+            <p class="imageText">Stop by our Booth #2 to learn more &nbsp; &nbsp; about recent initiatives launched across the UX domain</p>
+          </div>                 
+        </div>
+
+        <!-- markup for tablet  -->
+        <!-- top block with 2 images -->
+        <div class="imagesContainerTablet">
+          <div class="imageBlock imageBlock1">
+            <div class="imageBox">
+              <img src="img/news/01.jpg" width="275" height="147" alt="news picture1">
+            </div>
+            <p class="imageTitle">EPAM Acquires Alliance Global Services</p>
+            <p class="imageText">Increases Global Product Development Capabilities</p>
+          </div>
+          <div class="imageBlock imageBlock1">
+            <div class="imageBox">
+              <img src="img/news/02.jpg" width="275" height="147" alt="news picture2">
+            </div>
+            <p class="imageTitle">Q2 2015 Earnings Results Date Announced</p>
+            <p class="imageText">Results will be released on August 5, &nbsp; 2015</p>
+          </div>
+        </div>
+
+          <!-- middle block with 2 images -->
+          <div class="imagesContainerTablet">
+            <div class="imageBlock imageBlock1">
+              <div class="imageBox">
+                <img src="img/news/03.jpg" width="275" height="147" alt="news picture3">
+              </div>
+              <p class="imageTitle">EPAM Acquires NavigationArts</p>
+              <p class="imageText">Expands Digital Engagement Practice</p>
+            </div>
+            <div class="imageBlock imageBlock1">
+              <div class="imageBox">
+                <img src="img/news/04.jpg" width="275" height="147" alt="news picture4">
+              </div>
+              <p class="imageTitle">Top 25 IT-companies in Ukraine, July 2015</p>
+              <p class="imageText">Growth recovery and a new leader</p>
+            </div>
+          </div>
+
+          <!-- bottom block with 2 images -->
+          <div class="imagesContainerTablet">
+            <div class="imageBlock imageBlock1">
+              <div class="imageBox">
+                <img src="img/news/05.jpg" width="275" height="147" alt="news picture5">
+              </div>
+              <p class="imageTitle">German-Ukrainian Business &nbsp; Forum</p>
+              <p class="imageText">Learn why Ukraine is a perfect sourcing location for IT services</p>
+            </div>
+            <div class="imageBlock imageBlock1">
+              <div class="imageBox">
+                <img src="img/news/06.jpg" width="275" height="147" alt="news picture6">
+              </div>
+              <p class="imageTitle">User Friendly 2015</p>
+              <p class="imageText">Stop by our Booth #2 to learn more &nbsp; &nbsp; about recent initiatives launched across the UX domain</p>
+            </div>
+          </div>
+
+          <!-- markup for mobile  -->
+          <!-- one block with 6 images -->         
+          <div class="imagesContainerMobile">
+            <div class="imageBlock imageBlock1">
+              <div class="imageBox">
+                <img src="img/news/01.jpg" width="275" height="147" alt="news picture1">
+              </div>
+              <p class="imageTitle">EPAM Acquires Alliance Global Services</p>
+              <p class="imageText">Increases Global Product Development Capabilities</p>
+            </div>
+            <div class="imageBlock imageBlock1">
+              <div class="imageBox">
+                <img src="img/news/02.jpg" width="275" height="147" alt="news picture2">
+              </div>
+              <p class="imageTitle">Q2 2015 Earnings Results Date Announced</p>
+              <p class="imageText">Results will be released on August 5, 2015</p>
+            </div>
+            <div class="imageBlock imageBlock1">
+              <div class="imageBox">
+                <img src="img/news/03.jpg" width="275" height="147" alt="news picture3">
+              </div>
+              <p class="imageTitle">EPAM Acquires NavigationArts</p>
+              <p class="imageText">Expands Digital Engagement Practice</p>
+            </div>
+            <div class="imageBlock imageBlock1">
+              <div class="imageBox">
+                <img src="img/news/04.jpg" width="275" height="147" alt="news picture4">
+              </div>
+              <p class="imageTitle">Top 25 IT-companies in Ukraine, July 2015</p>
+              <p class="imageText">Growth recovery and a new leader</p>
+            </div>
+            <div class="imageBlock imageBlock1 imageBlockMobile">
+              <div class="imageBox">
+                <img src="img/news/05.jpg" width="275" height="147" alt="news picture5">
+              </div>
+              <p class="imageTitle">German-Ukrainian Business &nbsp; Forum</p>
+              <p class="imageText">Learn why Ukraine is a perfect sourcing location for IT services</p>
+            </div>
+            <div class="imageBlock imageBlock1 imageBlockMobile">
+              <div class="imageBox">
+                <img src="img/news/06.jpg" width="275" height="147" alt="news picture6">
+              </div>
+              <p class="imageTitle">User Friendly 2015</p>
+              <p class="imageText">Stop by our Booth #2 to learn more &nbsp; &nbsp; about recent initiatives launched across the UX domain</p>
+            </div>
+          </div>
+
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footerContainer">
+        <nav class="footerNavigation">
+          <ul>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a>
+          </ul>
+        </nav>
+        <div class="footerCopyright">
+          © 2015 EPAM Systems. All Rights Reserved
+        </div>
+      </div>
+    </footer>   
+
+  </div>
+</body>
+</html>
