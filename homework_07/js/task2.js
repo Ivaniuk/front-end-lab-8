@@ -6,65 +6,63 @@ var startGame = confirm('Do you want to play a game?'),
 	maxPrize = 10;
 	posPrize = 10;
 
-// main loop and label on it
-top:
-while (startGame) {	
-	
-	// random integer for a given range
-	var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-	// console.log(randomNumber);
-		
-	for (var i = 0; i < 3; i++) {
+if (startGame === false) {
+	console.log('You did not become a millionaire');
+} else {
 
-		var userNumber = parseInt(prompt('Enter a number from ' + min + ' to ' + max + '\n' + 'Attempts left: ' + attempts + '\n' + 
-			'Total prize: ' + totalPrize + '$\n' + 'Possible prize on current attempt: ' + posPrize + '$'));
+	// main loop and label on it
+	top:
+	while (startGame) {	
 		
-		// if the user guessed the number
-		if ( userNumber == randomNumber ) {						
-			totalPrize = totalPrize + posPrize;			 
-			var nextGame = confirm('Do you want to continue the game?');
+		// random integer for a given range
+		var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+		console.log(randomNumber);
 			
-			if (nextGame) {
-				max = max * 2;				
-				maxPrize = maxPrize * 3;
-				posPrize = maxPrize;				
-				attempts = 3;
-				continue top;				 
-			} else {
-				console.log('Thank you for a game. Your prize is: ' + totalPrize + '$');
-				var playAgain = confirm('Do you want to play again?');
-				if (playAgain) {					
+		for (var i = 0; i < 3; i++) {
+
+			var userNumber = prompt('Enter a number from ' + min + ' to ' + max + '\n' + 'Attempts left: ' + attempts + '\n' + 
+				'Total prize: ' + totalPrize + '$\n' + 'Possible prize on current attempt: ' + posPrize + '$');
+			
+			// check whether the value entered by the user can be converted into a number
+			if ( !isNaN(userNumber) ) {			
+				userNumber = parseInt(userNumber);
+			}		
+
+			// if the user guessed the number
+			if ( userNumber === randomNumber ) {						
+				totalPrize = totalPrize + posPrize;			 
+				var nextGame = confirm('Do you want to continue the game?');			
+				if (nextGame) {
+					max = max * 2;				
+					maxPrize = maxPrize * 3;
+					posPrize = maxPrize;				
 					attempts = 3;
+					continue top;				 
+				} else break;						 
+
+			// if the user did not guess the number		
+			} else {
+				posPrize = parseInt( posPrize / 2 );
+				attempts = attempts - 1;
+				
+				// when the user did not guess the number 3 times the prize is reset
+				if ( attempts === 0 ) {
 					totalPrize = 0;
-					posPrize = 10;
-					continue top;					
-				} else break top;					
-			}			 
-
-		// if the user did not guess the number		
-		} else {
-			posPrize = parseInt( posPrize / 2 );
-			attempts = attempts - 1;
-			
-			// when the user did not guess the number 3 times the prize is reset
-			if ( attempts == 0 ) {
-				totalPrize = 0;
-			}
-		} 		
+				}
+			} 		
+		}
+		//user did not guess the number 3 times or refused to continue after win
+		console.log('Thank you for a game. Your prize is: ' + totalPrize + '$');
+		var playAgain = confirm('Do you want to play again?');
+		if (playAgain) {		
+			attempts = 3;
+			posPrize = 10;
+			max = 5;
+			totalPrize = 0;
+			 continue;
+		} else break;		
 	}
-
-	console.log('Thank you for a game. Your prize is: ' + totalPrize + '$');
-	var playAgain = confirm('Do you want to play again?');
-	if (playAgain) {		
-		attempts = 3;
-		posPrize = 10;
-		max = 5;
-		totalPrize = 0;
-		 continue;
-	} else break;
-} 
-console.log('You did not become a millionaire');
-
+}
 
 
 
