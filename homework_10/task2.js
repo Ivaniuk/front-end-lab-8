@@ -6,19 +6,19 @@ function showResult(fighter) {
 
 function fighter(fighterProp) {
 
-	let stats = {
-    	name: fighterProp.name,
-		attack: fighterProp.attack,
-		hp: fighterProp.hp
+    let stats = {
+        name: fighterProp.name,
+        attack: fighterProp.attack,
+        hp: fighterProp.hp
     }
 
     let combatHistory = {
     	wins: 0,
-		loses: 0
+    	loses: 0
     }
 
-	return {	
-		getName: function() {
+    return {
+        getName: function() {
             return stats.name;
         },
         block: function() {
