@@ -1,0 +1,37 @@
+ul {
+  margin: 0;
+  padding-left: 12px;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+p {
+  margin: 3px;
+}
+
+p:hover {
+  background-color: #efefef;
+}
+
+i {
+  color: #edbc0b;
+}
+
+.file i {
+  color: #bbbbbb;
+}
+
+.emptyFolder {
+  padding-left: 10px;
+  font-style: italic;
+  
+}
+
+.material-icons {	
+    vertical-align: text-bottom;
+}
