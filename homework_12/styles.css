@@ -1,0 +1,124 @@
+body {
+	font-family: 'Times New Roman', Times, serif;
+	background: #1c1c1e;
+}
+
+/*preview-page styles*/
+h1 {
+	margin: 0;
+	padding-top: 10px;
+	color: #a19e86;
+}
+
+figure {
+	width: 270px; 
+    float: left;
+    margin: 0;
+	cursor: pointer;	
+    background: #1c1c1e;  
+    display: block;    
+    text-align: center;   
+ }
+
+figure:hover {
+	background: #2c2c2c;
+} 
+
+ p {
+ 	margin-bottom: 0;
+ }
+
+ p img {
+ 	width: 200px;
+ 	height: 146px;
+ }
+
+ figcaption {
+ 	margin-bottom: 15px;
+ 	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+ }
+
+ figcaption img {
+ 	width: 22px;
+ 	height: 14px;
+ }
+
+ span {
+ 	font-size: 17px;
+ 	text-transform: uppercase;
+ 	font-weight: 700;
+ 	color: #d7d1b7;
+ 	vertical-align: text-bottom;
+ }
+
+ span.tankLevel {
+ 	margin: 0 4px;
+ 	color: #a19e86; 	
+ }
+
+/*details-page styles*/
+ h1 span { 	
+	font-size: 30px;
+	color: #a19e86;
+}
+
+h1 :last-child {
+	text-transform: lowercase;
+}
+
+.tankName {
+	margin: 0 10px;
+}
+
+.imageContainer {
+	display: inline-block;
+	width: 650px;
+}
+
+.imageContainer p {	
+	font-size: 26px;
+	font-weight: 700;
+	color: #a19e86;
+}
+
+.tableContainer {
+	display: inline-block;
+	height: 460px;
+}
+
+table, td {
+	width: 1180px;
+	border: 1px solid #a19e86;
+	border-collapse: collapse;
+	color: #d7d1b7;
+	font-size: 20px;	
+}
+
+table caption {
+	margin-bottom: 20px;
+	text-align: left;
+	color: #a19e86;
+	font-size: 26px;
+	font-weight: 700;
+}
+
+td {
+	padding-left: 10px;
+	line-height: 38px;
+	font-size: 18px;
+}
+
+.tanksPropName {
+	width: 70%;
+}
+
+#backToList {
+	font-size: 16px;	
+	color: #a19e86;
+	cursor: pointer;
+}
+
+
+
